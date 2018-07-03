@@ -1,0 +1,42 @@
+<div id="particles-js-again"></div>
+
+<div class="container">
+	<h3>Get Up and Running with our Featured Hacks</h3>
+
+	<div class="featured-posts">
+
+	<h5 id="tag-title">Featured</h5>
+		<ul class="list-tags">
+	    	{{#get "posts" filter="featured:true" limit="4"}}
+				{{#foreach posts}}
+					<a href="{{url}}">
+						<li class="list-tags__box featured_posts">
+							<h5>{{title}}</h5>
+							{{#if feature_image}}
+								<img src="{{feature_image}}" class="tag-image" alt="{{name}} Featured Image"/>
+							{{/if}}
+							{{excerpt characters="90"}}
+						</li>
+					</a>
+			    {{/foreach}}
+		    {{/get}}
+    	</ul>
+
+	<h5 id="tag-title">Upcoming</h5>
+		<ul class="list-tags">
+	    	{{#get "posts" filter="primary_tag:upcoming" limit="4"}}
+				{{#foreach posts}}
+					<a href="#" id="upcoming_modal">
+						<li class="list-tags__box upcoming_posts">
+							<h5>{{title}}</h5>
+							{{#if feature_image}}
+								<img src="{{feature_image}}" class="tag-image" alt="{{name}} Featured Image"/>
+							{{/if}}
+							{{excerpt characters="90"}}
+						</li>
+					</a>
+			    {{/foreach}}
+		    {{/get}}
+    	</ul>
+	</div>
+</div>

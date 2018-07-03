@@ -1,0 +1,18 @@
+{{!-- The tag below means - insert everything in this file into the {body} of the default.hbs template --}}
+{{!< default}}
+
+{{!-- The hero content area --}}
+<section id="hero">
+	<div class="hero-wrapper">
+		{{> home_hero}}
+	</div>
+</section>
+
+{{!-- The main content area --}}
+<main id="content" role="main">
+	<div class="main-wrapper">
+		<div class="loop">
+			{{> post_loop}}
+		</div>
+	</div>
+</main>

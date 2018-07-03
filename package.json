@@ -1,0 +1,28 @@
+{
+    "name": "webhacks",
+    "description": "None yet",
+    "demo": "https://ryan.dimasc.io/ghost/webhacks",
+    "version": "1.0.0",
+    "license": "GNU General Public License, Version 2",
+    "engines": {
+        "ghost": ">=1.0.0"
+    },
+    "author": {
+        "name": "Ryan DiMascio",
+        "email": "hey@ryan.chat",
+        "url": "https://ryan.dimasc.io/"
+    },
+    "gpm": {
+        "type": "theme",
+        "categories": [
+            "Author"
+        ]
+    },
+    "keywords": [
+        "ghost",
+        "theme"
+    ],
+    "config": {
+        "posts_per_page": 1
+    }
+}

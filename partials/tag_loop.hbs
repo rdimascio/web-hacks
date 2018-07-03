@@ -1,0 +1,57 @@
+<div class="container">
+	<h3>Featured Hacks</h3>
+
+	<div class="featured-tags">
+
+	<h5 id="tag-title">Websites</h5>
+		<ul class="list-tags">
+	    	{{#get "tags" filter="slug:website" limit="4"}}
+				{{#foreach tags}}
+					<a href="{{url}}"><li>
+						<h5>{{name}}</h5>
+						{{#if feature_image}}
+						<img src="{{feature_image}}" class="tag-image" alt="{{name}} Featured Image"/>
+						{{/if}}
+						{{#if description}}
+							<p>{{description}}</p>
+						{{/if}}
+					</li></a>
+			    {{/foreach}}
+		    {{/get}}
+    	</ul>
+
+	<h5 id="tag-title">Blogging</h5>
+		<ul class="list-tags">
+	    	{{#get "tags" filter="slug:blog" limit="4"}}
+				{{#foreach tags}}
+					<a href="{{url}}"><li>
+						<h5>{{name}}</h5>
+						{{#if feature_image}}
+						<img src="{{feature_image}}" class="tag-image" alt="{{name}} Featured Image"/>
+						{{/if}}
+						{{#if description}}
+							<p>{{description}}</p>
+						{{/if}}
+					</li></a>
+			    {{/foreach}}
+		    {{/get}}
+    	</ul>
+
+	<h5 id="tag-title">Social Media</h5>
+		<ul class="list-tags">
+	    	{{#get "tags" filter="slug:social" limit="4"}}
+				{{#foreach tags}}
+					<a href="{{url}}"><li>
+						<h5>{{name}}</h5>
+						{{#if feature_image}}
+						<img src="{{feature_image}}" class="tag-image" alt="{{name}} Featured Image"/>
+						{{/if}}
+						{{#if description}}
+							<p>{{description}}</p>
+						{{/if}}
+					</li></a>
+			    {{/foreach}}
+		    {{/get}}
+    	</ul>
+	</div>
+</div>

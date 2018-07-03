@@ -1,0 +1,41 @@
+{{!-- The tag below means - insert everything in this file into the {body} of the default.hbs template --}}
+{{!< default}}
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+<main id="content" role="main">
+    <div class="loop">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {{#post}}
+                <div class="swiper-slide" data-history="{{slug}}">
+                    <article class="{{post_class}} container article-container" data-id={{comment_id}}>
+                        <div class="row">
+                            <div class="col-md-12 post-cover-container">
+                                <time class="post-date" datetime="{{date format="YYYY-MM-DD"}}">{{date format="MMMM Do, YYYY"}}</time>
+                                <div class="post-cover post-meta {{#if feature_image}}has-image{{/if}}">
+                                    <div class="pagination-number"></div>
+                                    <h1 class="post-title col-lg-8 col-sm-10 offset-sm-1 offset-lg-2">{{title}}</h1>
+                                    {{#if feature_image}}
+                                    <div class="cloned-content">
+                                        <div class="img-holder" style="background-image: url({{img_url feature_image}})"></div>
+                                        <div class="pagination-number"></div>
+                                        <span class="post-title col-lg-8 col-sm-10 offset-sm-1 offset-lg-2">{{title}}</span>
+                                    </div>
+                                    {{/if}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-10 offset-sm-1 offset-lg-2">
+                                <section class="post-content">
+                                    {{content}}
+                                </section>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                {{/post}}
+            </div>
+        </div>
+    </div>
+</main>
