@@ -743,6 +743,10 @@ header .nav ul li {
     padding: 15px 20px 15px 30px;
     width: calc(50% - 5px); }
 
+#hero .click a:hover {
+    transform: scale(1.5);
+    background-color: rgba(31, 37, 41, 0.1); }
+
 #hero .illustration {
     padding: 4em 0; }
     
@@ -1812,6 +1816,29 @@ footer .copyright{
 
 .copyright a {
     color: #51C3B7;
+}
+
+.footer-content p {
+    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(176, 169, 164);
+}
+
+.footer-content a {
+    color: #51C3B7;
+}
+
+footer ul {
+    margin-top: 120px;
+    list-style: none;
+}
+
+footer ul li {
+    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(176, 169, 164);
 }
 
 /* ==========================================================================
