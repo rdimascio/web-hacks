@@ -369,10 +369,6 @@ header nav ul{
     width: 100%;
 }
 
-header nav ul li{
-    border-bottom: 1px solid rgba(185, 178, 162, 0.15);
-}
-
 header nav ul li:last-child{
     border: none;
 }
@@ -390,7 +386,7 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    color: #E83030;
+    color: #51C3B7;
 }
 
 header .modal-footer{
@@ -428,21 +424,7 @@ header h5:before{
     content: '#';
 }
 
-/* Custom Nav */
-
-header .nav {
-    align-items: center;
-    justify-content: center;
-}
-
-header .nav ul {
-    list-style: none;
-    justify-content: space-between;
-    margin: 0;
-}
-
 header .nav ul li {
-    display: inline-flex;
     font-size: .8em;
     margin: 0 1em;
     color: rgb(185, 178, 162);
@@ -594,7 +576,7 @@ header .nav ul li {
 }
 
 .social li a:hover{
-    color: #E83030;
+    color: #51C3B7;
 }
 
 /* ==========================================================================
@@ -1947,7 +1929,7 @@ footer .copyright{
         margin-left: -15px;
         text-align: left;
     }
-    header .blog-logo .modal{
+    header .modal .blog-logo{
         text-align: center;
     }
     header .blog-logo a{
