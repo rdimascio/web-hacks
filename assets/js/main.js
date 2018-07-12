@@ -4,6 +4,14 @@
 
 jQuery(document).ready(function($) {
 
+	$('.tilt').tilt({
+		   glare: false,
+		   maxGlare: .25,
+		   scale: 1.05,
+		   perspective: 1000,
+		   maxTilt: 20,
+		})
+
 	// START OF: content appearing =====
 	var contentAppearing = (function(){
 		var bind = function () {

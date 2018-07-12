@@ -635,7 +635,7 @@ header .nav ul li {
     width: calc(50% - 5px);
     color: rgb(176, 169, 164); }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .list-tags a {
         width: 100%; } }
 
@@ -753,6 +753,12 @@ header .nav ul li {
 
 #hero .illustration svg {
     width: 100%; }
+
+.tilt {
+    transform-style: preserve-3d;
+    /*box-shadow:0 5px 30px rgba(0,0,0,.1);*/
+    transform: translateZ(20px);
+}
 
 #hero .floating_checklist {
     position: absolute;
