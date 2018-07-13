@@ -583,6 +583,17 @@ header .nav ul li {
    3b. Homepage
    ========================================================================== */
 
+@keyframes float {
+    0% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px); }
+    50% {
+        box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+        transform: translatey(-10px); }
+    100% {
+        box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+        transform: translatey(0px); }}
+
 #particles-js,
 #particles-js-again {
     position: absolute;
@@ -738,8 +749,11 @@ header .nav ul li {
     margin: 0;
     font-weight: normal;
     border-radius: 10px;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
     background-color: rgba(31, 37, 41, 0.6);
-    box-shadow: 0 0 8px 0 rgba(200,195,183,0.3);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    /*box-shadow: 0 0 8px 0 rgba(200,195,183,0.3);*/
     padding: 15px 20px 15px 30px;
     width: calc(50% - 5px); }
 
@@ -757,8 +771,9 @@ header .nav ul li {
 .tilt {
     transform-style: preserve-3d;
     /*box-shadow:0 5px 30px rgba(0,0,0,.1);*/
-    transform: translateZ(20px);
-}
+    transform: translateZ(20px); }
+
+
 
 #hero .floating_checklist {
     position: absolute;
@@ -790,11 +805,13 @@ header .nav ul li {
     font-size: 10px;
     border-radius: 10px;
     background-color: rgba(31, 37, 41, 0.7);
-    box-shadow: 0 0 8px 0 rgba(200,195,183,0.3);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     padding: 0 2em;
     margin: 1.6em 0;
     display: flex;
     align-content: center;
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
 }
 
 .floating_checklist .item_box:nth-child(1) {
