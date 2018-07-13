@@ -747,14 +747,13 @@ header .nav ul li {
     text-align: center;
     text-transform: uppercase;
     margin: 0;
-    font-weight: normal;
-    border-radius: 10px;
+    padding: 15px 20px 15px 30px;
+    font-weight: normal; 
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
-    background-color: rgba(31, 37, 41, 0.6);
     box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    /*box-shadow: 0 0 8px 0 rgba(200,195,183,0.3);*/
-    padding: 15px 20px 15px 30px;
+    border-radius: 10px;
+    background-color: rgba(31, 37, 41, 0.6);
     width: calc(50% - 5px); }
 
 #hero .click a:hover {
