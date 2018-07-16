@@ -608,21 +608,45 @@ header .nav ul li {
 
 .attribution {
     background-color: transparent;
-    bottom: 0;
-    left: 10px;
+    bottom: 4px;
+    left: 4px;
     position: fixed;
     width: auto;
     z-index: 100;
 }
 
 .cta {
-    background-color: #fff;
-    border: 1px solid #dddfe2;
+    background-color: rgba(16,20,22,0.6);
     border-radius: 3px;
     display: inline-block;
     margin-bottom: -3px;
     margin-left: 12px;
     vertical-align: bottom;
+}
+
+.ph {
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 8px;
+    text-align: center;
+    transition: all 100ms ease-out;
+}
+
+.cta p {
+    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(176, 169, 164);
+    margin: 0;
+}
+
+.cookie {
+    margin-top: -1em;
 }
 
 .round {
@@ -657,7 +681,7 @@ header .nav ul li {
 .list-tags li {
     border-radius: 10px;
     background-color: rgba(31, 37, 41, 0.5);
-    box-shadow: 0 0 8px 0 rgba(200,195,183,0.3);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
     padding: 15px 20px 15px 78px;
     margin-bottom: 10px;
     position: relative;
