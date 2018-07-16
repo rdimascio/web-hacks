@@ -1,4 +1,4 @@
-particlesJS('particles-js',
+particlesJS('particles-js-header',
 
     {
   "particles": {
@@ -113,7 +113,7 @@ particlesJS('particles-js',
 
 );
 
-particlesJS('particles-js-again',
+particlesJS('particles-js-loop',
 
     {
   "particles": {
@@ -228,7 +228,7 @@ particlesJS('particles-js-again',
 
 );
 
-particlesJS('particles-js-again',
+particlesJS('particles-js-footer',
 
     {
   "particles": {
