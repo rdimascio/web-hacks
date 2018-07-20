@@ -61,48 +61,27 @@
                                             <a href="https://www.reddit.com/submit?url={{url absolute="true"}}%2F&title={{encode title}}" title="Share on Reddit"><i class="fa fa-reddit-alien" aria-hidden="true"></i></a>
                                             <a href="mailto:?subject={{encode title}}&amp;body={{url absolute="true"}}" title="Share by Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                                         </div>
+                                        <div id="disqus_thread"></div>
+                                        <script>
+
+                                        /**
+                                        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+                                        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+                                        /*
+                                        var disqus_config = function () {
+                                        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+                                        this.page.identifier = "ghost-{{comment_id}}"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                                        };
+                                        */
+                                        (function() { // DON'T EDIT BELOW THIS LINE
+                                        var d = document, s = d.createElement('script');
+                                        s.src = 'https://webhacks-co.disqus.com/embed.js';
+                                        s.setAttribute('data-timestamp', +new Date());
+                                        (d.head || d.body).appendChild(s);
+                                        })();
+                                        </script>
+                                        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
                                     </section>
-                                    {{#if tags}}
-                                        <ul class="tags">
-                                        {{#foreach tags}}
-                                            <li>
-                                                <a href="{{url}}" title="{{name}}" class="tag tag-{{id}} {{slug}}">{{name}}</a>
-                                            </li>  
-                                        {{/foreach}}
-                                        </ul>
-                                    {{/if}}
-                                    {{^is "author"}}
-                                        {{#author}}
-                                            <section class="author {{#if profile_image}}has-image{{/if}}">
-                                                {{#if profile_image}}
-                                                <figure class="author-image">
-                                                    <a class="img" href="{{url}}" title="{{name}}"><img src="{{img_url profile_image}}" alt="{{name}}"></a>
-                                                </figure>
-                                                {{/if}}
-
-                                                <div class="author-content">
-                                                    <h3>
-                                                        <a href="{{url}}">{{name}}</a>
-                                                    </h3>
-
-                                                    {{#if bio}}
-                                                        <p>{{bio}}</p>
-                                                    {{else}}
-                                                        <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                                                    {{/if}}
-
-                                                    <div class="author-meta">
-                                                        <span class="social">
-                                                            {{#if twitter}}<a href="{{twitter_url}}" class="twitter" title="{{twitter}}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>{{/if}}
-                                                            {{#if facebook}}<a href="{{facebook_url}}" class="facebook" title="{{facebook}}" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>{{/if}}
-                                                        </span>
-                                                        {{#if website}}<span class="author-link"><a href="{{website}}" target="_blank" rel="noopener noreferrer"><i class="fa fa-link" aria-hidden="true"></i> {{website}}</a></span>{{/if}}
-                                                        {{#if location}}<span class="author-location"><i class="fa fa-map-marker" aria-hidden="true"></i> {{location}}</span>{{/if}}
-                                                    </div>
-                                                </div>
-                                            </section>
-                                        {{/author}}
-                                    {{/is}}
                                 </div>
                             </div>
                         </article>
