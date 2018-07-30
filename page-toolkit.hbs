@@ -1,0 +1,27 @@
+{{!-- The tag below means - insert everything in this file into the {body} of the default.hbs template --}}
+{{!< default}}
+
+{{!-- The main content area --}}
+<main id="content" role="main">
+	<div class="main-wrapper">
+		<section class="loop">
+			<div class="container">
+				<ul class="list-tags">
+			    	{{#get "tags"}}
+						{{#foreach tags from="5" to="32"}}
+							<a href="{{url}}"><li>
+								<h5>{{name}}</h5>
+								{{#if feature_image}}
+								<img src="{{feature_image}}" class="tag-image" alt="{{name}} Featured Image"/>
+								{{/if}}
+								{{#if description}}
+									<p>{{description}}</p>
+								{{/if}}
+							</li></a>
+					    {{/foreach}}
+				    {{/get}}
+		    	</ul>
+			</div>
+		</section>
+	</div
+</main>
