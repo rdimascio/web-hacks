@@ -4,8 +4,16 @@
 {{#tag}}
 <div class="container">
 	<div class="row">
-		<div class="col-lg-8 offset-lg-2 text-center tag-title">
-			<h1>{{name}}</h1>
+		<div class="tag-wrapper">
+			<div class="tag-title">
+				<h1>{{name}}</h1>
+				{{#if feature_image}}
+				<img src="{{feature_image}}" class="tag-image" alt="{{name}} Featured Image"/>
+				{{/if}}
+				{{#if description}}
+					<p>{{description}}</p>
+				{{/if}}
+			</div>
 		</div>
 	</div>
 </div>

@@ -717,14 +717,20 @@ header .nav ul li {
     margin-top: 0;
     margin: 0; }
 
-.list-tags li p {
+/*.list-tags li p {
     color: #262626;
     font-size: 19px;
     letter-spacing: -1px;
     line-height: 25px;
     font-family: "roboto-mono", "Roboto Mono", sans-serif;
     font-weight: normal;
-    margin-bottom: 0; }
+    margin-bottom: 0; }*/
+    
+.list-tags li p {
+    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(176, 169, 164); }
 
 .tag-image {
     position: absolute;
@@ -1750,6 +1756,40 @@ header .nav ul li {
    5. Tags
    ========================================================================== */
 
+.tag-wrapper {
+    border-radius: 10px;
+    background-color: rgba(31, 37, 41, 0.5);
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    padding: 15px 20px 15px 78px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 14px;
+    width: 100%;
+    height: auto;
+    backface-visibility: hidden;
+    margin-bottom: 6em;
+    transform: translateZ(0);
+    transition: transform 0.55s ease-out;
+}
+
+.tag-title h1 {
+    color: #51C3B7;
+    font-size: 15px;
+    line-height: 27px;
+    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    display: block;
+    font-weight: normal;
+    margin-top: 0;
+    margin: 0;
+}
+
+.tag-title p {
+    font-family: "roboto-mono", "Roboto Mono", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: rgb(176, 169, 164);
+}
+
 .tags{
     text-align: center;
     margin: 85px 0;
@@ -1788,10 +1828,6 @@ header .nav ul li {
 
 .tags li a:before{
     content: '#';
-}
-
-.tag-template .tag-title h1{
-    margin: 35px 0 115px;
 }
 
 /* ==========================================================================
