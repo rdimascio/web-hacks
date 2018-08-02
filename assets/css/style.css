@@ -543,14 +543,16 @@ header .nav ul li {
 }
 
 .list-box li a:hover{
-    color: #E83030;
+    color: #51C3B7;
 }
 
 .bookmark-container .no-bookmarks{
-    font-size: 17px;
+    font-family: "roboto-mono", "Roboto Mono", sans-serif;
     text-align: center;
-    margin: 100px;
-    color: #fff;
+    font-size: 14px;
+    margin-top: 3em;
+    font-weight: normal;
+    color: rgb(176, 169, 164);
 }
 
 .bookmark-container .no-bookmarks .circle{
@@ -1847,6 +1849,10 @@ header .nav ul li {
    7. Footer
    ========================================================================== */
 
+.share-on {
+    margin-bottom: 2em;
+}
+
 footer h3{
     color: rgb(176, 169, 164);
     font-size: 20px;
@@ -1889,11 +1895,11 @@ footer .copyright{
     color: #51C3B7;
 }
 
-.footer-menu {
+/* .footer-menu {
     text-align: left; }
   @media (min-width: 768px) {
     .footer-menu {
-        text-align: right; } }
+        text-align: right; } } */
 
 footer ul {
     list-style: none;
