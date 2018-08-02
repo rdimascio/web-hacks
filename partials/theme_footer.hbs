@@ -5,15 +5,17 @@
             <div class="col-md-12">
                 <div class="footer-content">
                     <div class="row">
-                        <div class="col-md-3 col-sm-6 col-xs-6">     
-                            <ul>
-                                <li><a href="/pricing/#faq">FAQ</a></li>
-                                <li><a href="/about/">About</a></li>
-                                <li><a href="/pricing/">Pricing</a></li>
-                                <li><a href="/contact/" target="_blank">Contact</a></li>
-                            </ul>
+                        <div class="footer-cta col-md-6 col-sm-12">     
+                            <h3>New hacks each week</h3>
+                            {{subscribe_form
+                                form_class="gh-signin"
+                                input_class="gh-input"
+                                button_class="btn"
+                                placeholder="Your email address"
+                            }}
                         </div>
-                        <div class="col-md-3 col-sm-6 col-xs-6">
+                        <div class="footer-menu col-md-3 col-sm-6 col-xs-6">
+                            <h3>ABOUT</h3>
                             <ul>
                                 <li><a href="/tools/">Tools</a></li>
                                 <li><a href="/deals/">Deals</a></li>
@@ -21,14 +23,14 @@
                                 <li><a href="/resources/">Resources</a></li>
                             </ul>
                         </div>
-                        <div class="col-md-6 col-sm-12">
-                            <h3>Get a new hack each week</h3>
-                            {{subscribe_form
-                                form_class="gh-signin"
-                                input_class="gh-input"
-                                button_class="btn"
-                                placeholder="Your email address"
-                            }}
+                        <div class="footer-menu col-md-3 col-sm-6 col-xs-6">
+                            <h3>RESOURCES</h3>
+                            <ul>
+                                <li><a href="/tools/">Tools</a></li>
+                                <li><a href="/deals/">Deals</a></li>
+                                <li><a href="/market/" target="_blank">Market</a></li>
+                                <li><a href="/resources/">HackBook</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="row">
@@ -41,7 +43,7 @@
         </div>
     </footer>
 
-    <div class="attribution">
+    {{!-- <div class="attribution">
         <div class="container cta">
             <div class="row">
                     <span class="cookie">                 
@@ -59,4 +61,4 @@
                     <p class="cookie-text">We use cookies</p>
             </div>
         </div>
-    </div>
+    </div> --}}

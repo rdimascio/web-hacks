@@ -276,9 +276,9 @@ header .blog-logo a span{
     transform: translateY(10%);
 }
 
-header .blog-logo a:hover{
+/* header .blog-logo a:hover{
     color: #E83030;
-}
+} */
 
 header .blog-logo a img{
     max-width: 250px;
@@ -1636,7 +1636,7 @@ header .nav ul li {
 
 .share-on a:hover{
     border: none;
-    color: #E83030;
+    color: rgb(23,167,96);
 }
 
 /* ==========================================================================
@@ -1945,8 +1945,13 @@ footer .copyright{
     color: #51C3B7;
 }
 
+.footer-menu {
+    text-align: left; }
+  @media (min-width: 768px) {
+    .footer-menu {
+        text-align: right; } }
+
 footer ul {
-    margin-top: 120px;
     list-style: none;
 }
 
