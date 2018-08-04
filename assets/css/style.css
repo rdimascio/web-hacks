@@ -276,9 +276,9 @@ header .blog-logo a span{
     transform: translateY(10%);
 }
 
-header .blog-logo a:hover{
+/* header .blog-logo a:hover{
     color: #E83030;
-}
+} */
 
 header .blog-logo a img{
     max-width: 250px;
@@ -543,14 +543,16 @@ header .nav ul li {
 }
 
 .list-box li a:hover{
-    color: #E83030;
+    color: #51C3B7;
 }
 
 .bookmark-container .no-bookmarks{
-    font-size: 17px;
+    font-family: "roboto-mono", "Roboto Mono", sans-serif;
     text-align: center;
-    margin: 100px;
-    color: #fff;
+    font-size: 14px;
+    margin-top: 3em;
+    font-weight: normal;
+    color: rgb(176, 169, 164);
 }
 
 .bookmark-container .no-bookmarks .circle{
@@ -1021,62 +1023,6 @@ header .nav ul li {
   -moz-transition: color 0.5s ease;
   -o-transition: color 0.5s ease;
   transition: color 0.5s ease; }
-
-  .blinking-cursor {
-  font-weight: 100;
-  font-size: 30px;
-  color: #2E3D48;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-
-@keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
-
-@-moz-keyframes blink {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
-
-@-webkit-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
-
-@-ms-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
-
-@-o-keyframes "blink" {
-  from, to {
-    color: transparent;
-  }
-  50% {
-    color: black;
-  }
-}
 
 /* ==========================================================================
    3b. Inner Content
@@ -1648,7 +1594,7 @@ header .nav ul li {
 
 .share-on a:hover{
     border: none;
-    color: #E83030;
+    color: rgb(23,167,96);
 }
 
 /* ==========================================================================
@@ -1915,6 +1861,10 @@ header .nav ul li {
    7. Footer
    ========================================================================== */
 
+.share-on {
+    margin-bottom: 2em;
+}
+
 footer h3{
     color: rgb(176, 169, 164);
     font-size: 20px;
@@ -1957,8 +1907,13 @@ footer .copyright{
     color: #51C3B7;
 }
 
+/* .footer-menu {
+    text-align: left; }
+  @media (min-width: 768px) {
+    .footer-menu {
+        text-align: right; } } */
+
 footer ul {
-    margin-top: 120px;
     list-style: none;
 }
 

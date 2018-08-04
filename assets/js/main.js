@@ -227,9 +227,9 @@ jQuery(document).ready(function($) {
 
         	$.each(results, function(index, val) {
         		if (val.tags.length) {
-	        		$('#results ul[data-tag="'+ val.tags[0].name +'"]').append('<li><time>'+ val.pubDate +'</time><a href="#" class="read-later" data-id="'+ val.id +'"></a><a href="'+ val.link +'">'+ val.title +'</a></li>');
+	        		$('#results ul[data-tag="'+ val.tags[0].name +'"]').append('<li><a href="#" class="read-later" data-id="'+ val.id +'"></a><a href="'+ val.link +'">'+ val.title +'</a></li>');
         		}else{
-        			$('#results ul[data-tag="Other"]').append('<li><a href="#" class="read-later" data-id="'+ val.id +'"></a><time>'+ val.pubDate +'</time><a href="'+ val.link +'">'+ val.title +'</a></li>');
+        			$('#results ul[data-tag="Other"]').append('<li><a href="#" class="read-later" data-id="'+ val.id +'"></a><a href="'+ val.link +'">'+ val.title +'</a></li>');
         		};
         	});
 
@@ -381,9 +381,9 @@ jQuery(document).ready(function($) {
 
 	        	$.each(data.posts, function(index, val) {
 	        		if (val.tags.length) {
-		        		$('.bookmark-container ul[data-tag="'+ val.tags[0].name +'"]').append('<li><time>'+ prettyDate(val.created_at) +'</time><a href="#" class="read-later active" data-id="'+ val.id +'"></a><a href="/'+ val.slug +'">'+ val.title +'</a></li>');
+		        		$('.bookmark-container ul[data-tag="'+ val.tags[0].name +'"]').append('<li><a href="#" class="read-later active" data-id="'+ val.id +'"></a><a href="/'+ val.slug +'">'+ val.title +'</a></li>');
 	        		}else{
-	        			$('.bookmark-container ul[data-tag="Other"]').append('<li><a href="#" class="read-later active" data-id="'+ val.id +'"></a><time>'+ prettyDate(val.created_at) +'</time><a href="/'+ val.slug +'">'+ val.title +'</a></li>');
+	        			$('.bookmark-container ul[data-tag="Other"]').append('<li><a href="#" class="read-later active" data-id="'+ val.id +'"></a><a href="/'+ val.slug +'">'+ val.title +'</a></li>');
 	        		};
 	        	});
 
