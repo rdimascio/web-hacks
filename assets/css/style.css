@@ -1099,6 +1099,10 @@ header .nav ul li {
     border-color: transparent;
 }
 
+.tag-loop-container .article-container {
+    padding-bottom: 0;
+}
+
 .article-container .post-meta{
     margin-left: -15px;
     width: calc(100% + 30px);
@@ -1126,6 +1130,10 @@ header .nav ul li {
     display: inline-block;
     font-family: "roboto-mono", "Roboto Mono", sans-serif;
     z-index: 2;
+}
+
+.article-container.tag-loop .post-title { 
+    margin: 50px auto 50px;
 }
 
 .article-container .post-title a{
@@ -1186,6 +1194,10 @@ header .nav ul li {
     -moz-transition: all 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940); 
     -o-transition: all 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940); 
     transition: all 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+
+.tag-loop-container .article-container .post-meta .cloned-content{
+    border-radius: 10px;
 }
 
 .article-container .post-meta .cloned-content:before{
@@ -1345,7 +1357,7 @@ header .nav ul li {
 .loop .next,
 .loop .prev{
     position: absolute;
-    top: 225px;
+    top: 125px;
     margin-left: 1160px;
     width: 44px;
     height: 44px;
