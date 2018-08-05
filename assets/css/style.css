@@ -769,12 +769,15 @@ header .nav ul li {
 #hero {
     position: relative;
     color: #fff;
-    text-align: center;
+    margin: 2em 8em;
+    text-align: left;
     display: flex;
     align-items: flex-start;
-    justify-content: center; }
+    justify-content: flex-start; }
 
 #hero .hello {
+    margin: 2em 0 0 2em;
+    text-align: left;
     -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease-out;
     -moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease-out;
     -o-transition: opacity 0.5s ease, -o-transform 0.5s ease-out;
@@ -785,7 +788,7 @@ header .nav ul li {
     letter-spacing: 5px;
     color: #fff;
     line-height: 40px;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     margin: 0;
     font-weight: normal;
@@ -797,7 +800,7 @@ header .nav ul li {
 
 #hero .hello p {
     font-family: "roboto-mono", "Roboto Mono", sans-serif;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     margin-top: 1em;
     font-weight: normal;
@@ -825,7 +828,7 @@ header .nav ul li {
     background-color: rgba(31, 37, 41, 0.1); }
 
 #hero .illustration {
-    margin: 6em 0; 
+    margin: 2em 0 2em -6em; 
     min-width: 700px; }
     
 
@@ -1334,11 +1337,11 @@ header .nav ul li {
 }
 
 .loop .next a{
-    background-color: rgba(82, 173, 113, 0.4);
+    background-color: rgba(81, 195, 183, 0.4);
 }
 
 .loop .next a:hover{
-    background-color: rgba(82, 173, 113, 0.8);
+    background-color: rgba(81, 195, 183, 0.8);
 }
 
 .loop .next a.active,
